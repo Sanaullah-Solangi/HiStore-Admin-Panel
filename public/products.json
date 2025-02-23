@@ -1,0 +1,848 @@
+[
+  {
+    "id": 1,
+    "key": 1,
+    "title": "Eye Lasyic",
+    "description": "Very beautiful and cheap product",
+    "brand": "sani",
+    "category": "beauty",
+    "price": 100,
+    "status": "pending",
+    "discount": "10%",
+    "stock": 50,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Ayesha Siddiqui",
+        "comment": "Great product! Loved it.",
+        "rating": 4.5
+      },
+      {
+        "id": 2,
+        "user": "Bilal Ahmed",
+        "comment": "Good quality but a bit expensive.",
+        "rating": 3.8
+      }
+    ],
+    "rating": [4.5, 3.8],
+    "likes": ["user1", "user2", "user3"],
+    "totalSold": 120,
+    "priceHistory": [
+      { "date": "2024-07-01", "oldPrice": 1600 },
+      { "date": "2024-07-15", "oldPrice": 1700 }
+    ]
+  },
+  {
+    "id": 2,
+    "key": 2,
+    "title": "Lipstick",
+    "description": "Long-lasting and vibrant colors",
+    "brand": "loreal",
+    "category": "beauty",
+    "price": 15,
+    "status": "active",
+    "discount": "5%",
+    "stock": 200,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Fatima Noor",
+        "comment": "Amazing color!",
+        "rating": 4.7
+      }
+    ],
+    "rating": [4.7],
+    "likes": ["user4", "user5"],
+    "totalSold": 300,
+    "priceHistory": [
+      { "date": "2024-06-01", "oldPrice": 20 },
+      { "date": "2024-06-15", "oldPrice": 18 }
+    ]
+  },
+  {
+    "id": 3,
+    "key": 3,
+    "title": "Foundation",
+    "description": "Full coverage and lightweight",
+    "brand": "maybelline",
+    "category": "beauty",
+    "price": 25,
+    "status": "active",
+    "discount": "15%",
+    "stock": 150,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Hamza Raza",
+        "comment": "Perfect for daily use.",
+        "rating": 4.2
+      }
+    ],
+    "rating": [4.2],
+    "likes": ["user6"],
+    "totalSold": 250,
+    "priceHistory": [
+      { "date": "2024-05-01", "oldPrice": 30 },
+      { "date": "2024-05-15", "oldPrice": 28 }
+    ]
+  },
+  {
+    "id": 4,
+    "key": 4,
+    "title": "Mascara",
+    "description": "Volumizing and waterproof",
+    "brand": "revlon",
+    "category": "beauty",
+    "price": 12,
+    "status": "active",
+    "discount": "10%",
+    "stock": 180,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Imran Sheikh",
+        "comment": "Great product!",
+        "rating": 4.8
+      }
+    ],
+    "rating": [4.8],
+    "likes": ["user7", "user8"],
+    "totalSold": 400,
+    "priceHistory": [
+      { "date": "2024-04-01", "oldPrice": 15 },
+      { "date": "2024-04-15", "oldPrice": 14 }
+    ]
+  },
+  {
+    "id": 5,
+    "key": 5,
+    "title": "Eyeliner",
+    "description": "Smooth and long-lasting",
+    "brand": "nyx",
+    "category": "beauty",
+    "price": 8,
+    "status": "active",
+    "discount": "20%",
+    "stock": 220,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Junaid Malik",
+        "comment": "Easy to apply.",
+        "rating": 4.6
+      }
+    ],
+    "rating": [4.6],
+    "likes": ["user9", "user10"],
+    "totalSold": 500,
+    "priceHistory": [
+      { "date": "2024-03-01", "oldPrice": 10 },
+      { "date": "2024-03-15", "oldPrice": 9 }
+    ]
+  },
+  {
+    "id": 6,
+    "key": 6,
+    "title": "Blush",
+    "description": "Natural-looking and blendable",
+    "brand": "clinique",
+    "category": "beauty",
+    "price": 18,
+    "status": "active",
+    "discount": "10%",
+    "stock": 120,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Khadija Rehman",
+        "comment": "Love the color!",
+        "rating": 4.9
+      }
+    ],
+    "rating": [4.9],
+    "likes": ["user11"],
+    "totalSold": 180,
+    "priceHistory": [
+      { "date": "2024-02-01", "oldPrice": 20 },
+      { "date": "2024-02-15", "oldPrice": 19 }
+    ]
+  },
+  {
+    "id": 7,
+    "key": 7,
+    "title": "Highlighter",
+    "description": "Glowing and radiant finish",
+    "brand": "fenty",
+    "category": "beauty",
+    "price": 22,
+    "status": "active",
+    "discount": "5%",
+    "stock": 90,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Laiba Aslam",
+        "comment": "Perfect for parties.",
+        "rating": 4.7
+      }
+    ],
+    "rating": [4.7],
+    "likes": ["user12", "user13"],
+    "totalSold": 150,
+    "priceHistory": [
+      { "date": "2024-01-01", "oldPrice": 25 },
+      { "date": "2024-01-15", "oldPrice": 24 }
+    ]
+  },
+  {
+    "id": 8,
+    "key": 8,
+    "title": "Concealer",
+    "description": "Full coverage and lightweight",
+    "brand": "nars",
+    "category": "beauty",
+    "price": 20,
+    "status": "active",
+    "discount": "10%",
+    "stock": 200,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Muhammad Saad",
+        "comment": "Great for dark circles.",
+        "rating": 4.5
+      }
+    ],
+    "rating": [4.5],
+    "likes": ["user14"],
+    "totalSold": 300,
+    "priceHistory": [
+      { "date": "2023-12-01", "oldPrice": 22 },
+      { "date": "2023-12-15", "oldPrice": 21 }
+    ]
+  },
+  {
+    "id": 9,
+    "key": 9,
+    "title": "Setting Spray",
+    "description": "Long-lasting and refreshing",
+    "brand": "urban decay",
+    "category": "beauty",
+    "price": 30,
+    "status": "active",
+    "discount": "15%",
+    "stock": 80,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Nadia Akhtar",
+        "comment": "Keeps makeup intact.",
+        "rating": 4.8
+      }
+    ],
+    "rating": [4.8],
+    "likes": ["user15", "user16"],
+    "totalSold": 200,
+    "priceHistory": [
+      { "date": "2023-11-01", "oldPrice": 35 },
+      { "date": "2023-11-15", "oldPrice": 33 }
+    ]
+  },
+  {
+    "id": 10,
+    "key": 10,
+    "title": "Lip Gloss",
+    "description": "Shiny and non-sticky",
+    "brand": "fenty",
+    "category": "beauty",
+    "price": 10,
+    "status": "active",
+    "discount": "10%",
+    "stock": 250,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Omar Farooq",
+        "comment": "Love the shine!",
+        "rating": 4.6
+      }
+    ],
+    "rating": [4.6],
+    "likes": ["user17"],
+    "totalSold": 400,
+    "priceHistory": [
+      { "date": "2023-10-01", "oldPrice": 12 },
+      { "date": "2023-10-15", "oldPrice": 11 }
+    ]
+  },
+  {
+    "id": 11,
+    "key": 11,
+    "title": "Eyeshadow Palette",
+    "description": "Versatile and pigmented",
+    "brand": "huda beauty",
+    "category": "beauty",
+    "price": 50,
+    "status": "active",
+    "discount": "20%",
+    "stock": 60,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Pakeeza Khan",
+        "comment": "Amazing colors!",
+        "rating": 4.9
+      }
+    ],
+    "rating": [4.9],
+    "likes": ["user18", "user19"],
+    "totalSold": 100,
+    "priceHistory": [
+      { "date": "2023-09-01", "oldPrice": 60 },
+      { "date": "2023-09-15", "oldPrice": 55 }
+    ]
+  },
+  {
+    "id": 12,
+    "key": 12,
+    "title": "Bronzer",
+    "description": "Natural-looking and blendable",
+    "brand": "benefit",
+    "category": "beauty",
+    "price": 28,
+    "status": "active",
+    "discount": "10%",
+    "stock": 100,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Qasim Ali",
+        "comment": "Perfect for contouring.",
+        "rating": 4.7
+      }
+    ],
+    "rating": [4.7],
+    "likes": ["user20"],
+    "totalSold": 150,
+    "priceHistory": [
+      { "date": "2023-08-01", "oldPrice": 30 },
+      { "date": "2023-08-15", "oldPrice": 29 }
+    ]
+  },
+  {
+    "id": 13,
+    "key": 13,
+    "title": "Primer",
+    "description": "Smooth and long-lasting",
+    "brand": "smashbox",
+    "category": "beauty",
+    "price": 22,
+    "status": "active",
+    "discount": "5%",
+    "stock": 120,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Rukhsar Ahmed",
+        "comment": "Great for oily skin.",
+        "rating": 4.5
+      }
+    ],
+    "rating": [4.5],
+    "likes": ["user21", "user22"],
+    "totalSold": 200,
+    "priceHistory": [
+      { "date": "2023-07-01", "oldPrice": 25 },
+      { "date": "2023-07-15", "oldPrice": 24 }
+    ]
+  },
+  {
+    "id": 14,
+    "key": 14,
+    "title": "Lip Liner",
+    "description": "Precise and long-lasting",
+    "brand": "mac",
+    "category": "beauty",
+    "price": 10,
+    "status": "active",
+    "discount": "10%",
+    "stock": 180,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Sadia Batool",
+        "comment": "Perfect for lipstick.",
+        "rating": 4.6
+      }
+    ],
+    "rating": [4.6],
+    "likes": ["user23"],
+    "totalSold": 300,
+    "priceHistory": [
+      { "date": "2023-06-01", "oldPrice": 12 },
+      { "date": "2023-06-15", "oldPrice": 11 }
+    ]
+  },
+  {
+    "id": 15,
+    "key": 15,
+    "title": "Setting Powder",
+    "description": "Lightweight and mattifying",
+    "brand": "laura mercier",
+    "category": "beauty",
+    "price": 35,
+    "status": "active",
+    "discount": "15%",
+    "stock": 70,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Tariq Mahmood",
+        "comment": "Great for oily skin.",
+        "rating": 4.8
+      }
+    ],
+    "rating": [4.8],
+    "likes": ["user24", "user25"],
+    "totalSold": 120,
+    "priceHistory": [
+      { "date": "2023-05-01", "oldPrice": 40 },
+      { "date": "2023-05-15", "oldPrice": 38 }
+    ]
+  },
+  {
+    "id": 16,
+    "key": 16,
+    "title": "Lip Balm",
+    "description": "Moisturizing and soothing",
+    "brand": "burt's bees",
+    "category": "beauty",
+    "price": 5,
+    "status": "active",
+    "discount": "10%",
+    "stock": 300,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Uzma Khan",
+        "comment": "Perfect for dry lips.",
+        "rating": 4.7
+      }
+    ],
+    "rating": [4.7],
+    "likes": ["user26"],
+    "totalSold": 500,
+    "priceHistory": [
+      { "date": "2023-04-01", "oldPrice": 6 },
+      { "date": "2023-04-15", "oldPrice": 5.5 }
+    ]
+  },
+  {
+    "id": 17,
+    "key": 17,
+    "title": "BB Cream",
+    "description": "Lightweight and natural finish",
+    "brand": "garnier",
+    "category": "beauty",
+    "price": 12,
+    "status": "active",
+    "discount": "10%",
+    "stock": 150,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Waqar Ahmed",
+        "comment": "Great for daily use.",
+        "rating": 4.5
+      }
+    ],
+    "rating": [4.5],
+    "likes": ["user27", "user28"],
+    "totalSold": 250,
+    "priceHistory": [
+      { "date": "2023-03-01", "oldPrice": 15 },
+      { "date": "2023-03-15", "oldPrice": 14 }
+    ]
+  },
+  {
+    "id": 18,
+    "key": 18,
+    "title": "CC Cream",
+    "description": "Full coverage and lightweight",
+    "brand": "it cosmetics",
+    "category": "beauty",
+    "price": 25,
+    "status": "active",
+    "discount": "10%",
+    "stock": 100,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Yasir Hussain",
+        "comment": "Perfect for sensitive skin.",
+        "rating": 4.8
+      }
+    ],
+    "rating": [4.8],
+    "likes": ["user29"],
+    "totalSold": 150,
+    "priceHistory": [
+      { "date": "2023-02-01", "oldPrice": 30 },
+      { "date": "2023-02-15", "oldPrice": 28 }
+    ]
+  },
+  {
+    "id": 19,
+    "key": 19,
+    "title": "Face Mask",
+    "description": "Hydrating and refreshing",
+    "brand": "glamglow",
+    "category": "beauty",
+    "price": 40,
+    "status": "active",
+    "discount": "20%",
+    "stock": 60,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Zainab Ali",
+        "comment": "Great for glowing skin.",
+        "rating": 4.9
+      }
+    ],
+    "rating": [4.9],
+    "likes": ["user30", "user31"],
+    "totalSold": 80,
+    "priceHistory": [
+      { "date": "2023-01-01", "oldPrice": 50 },
+      { "date": "2023-01-15", "oldPrice": 45 }
+    ]
+  },
+  {
+    "id": 20,
+    "key": 20,
+    "title": "Sunscreen",
+    "description": "SPF 50 and lightweight",
+    "brand": "neutrogena",
+    "category": "beauty",
+    "price": 15,
+    "status": "active",
+    "discount": "10%",
+    "stock": 200,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Ahmed Raza",
+        "comment": "Great for outdoor use.",
+        "rating": 4.7
+      }
+    ],
+    "rating": [4.7],
+    "likes": ["user32"],
+    "totalSold": 300,
+    "priceHistory": [
+      { "date": "2022-12-01", "oldPrice": 18 },
+      { "date": "2022-12-15", "oldPrice": 17 }
+    ]
+  },
+  {
+    "id": 21,
+    "key": 21,
+    "title": "Night Cream",
+    "description": "Hydrating and anti-aging",
+    "brand": "olay",
+    "category": "beauty",
+    "price": 20,
+    "status": "active",
+    "discount": "10%",
+    "stock": 120,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Bushra Khan",
+        "comment": "Great for dry skin.",
+        "rating": 4.6
+      }
+    ],
+    "rating": [4.6],
+    "likes": ["user33", "user34"],
+    "totalSold": 150,
+    "priceHistory": [
+      { "date": "2022-11-01", "oldPrice": 25 },
+      { "date": "2022-11-15", "oldPrice": 24 }
+    ]
+  },
+  {
+    "id": 22,
+    "key": 22,
+    "title": "Eye Cream",
+    "description": "Reduces dark circles and puffiness",
+    "brand": "kiehl's",
+    "category": "beauty",
+    "price": 30,
+    "status": "active",
+    "discount": "15%",
+    "stock": 80,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Danish Iqbal",
+        "comment": "Great for sensitive skin.",
+        "rating": 4.8
+      }
+    ],
+    "rating": [4.8],
+    "likes": ["user35"],
+    "totalSold": 100,
+    "priceHistory": [
+      { "date": "2022-10-01", "oldPrice": 35 },
+      { "date": "2022-10-15", "oldPrice": 33 }
+    ]
+  },
+  {
+    "id": 23,
+    "key": 23,
+    "title": "Serum",
+    "description": "Anti-aging and hydrating",
+    "brand": "the ordinary",
+    "category": "beauty",
+    "price": 10,
+    "status": "active",
+    "discount": "10%",
+    "stock": 150,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Eman Fatima",
+        "comment": "Great for glowing skin.",
+        "rating": 4.7
+      }
+    ],
+    "rating": [4.7],
+    "likes": ["user36", "user37"],
+    "totalSold": 200,
+    "priceHistory": [
+      { "date": "2022-09-01", "oldPrice": 12 },
+      { "date": "2022-09-15", "oldPrice": 11 }
+    ]
+  },
+  {
+    "id": 24,
+    "key": 24,
+    "title": "Toner",
+    "description": "Balances and refreshes skin",
+    "brand": "thayers",
+    "category": "beauty",
+    "price": 12,
+    "status": "active",
+    "discount": "10%",
+    "stock": 100,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Fahad Khan",
+        "comment": "Great for oily skin.",
+        "rating": 4.6
+      }
+    ],
+    "rating": [4.6],
+    "likes": ["user38"],
+    "totalSold": 150,
+    "priceHistory": [
+      { "date": "2022-08-01", "oldPrice": 15 },
+      { "date": "2022-08-15", "oldPrice": 14 }
+    ]
+  },
+  {
+    "id": 25,
+    "key": 25,
+    "title": "Cleanser",
+    "description": "Gentle and effective",
+    "brand": "cetaphil",
+    "category": "beauty",
+    "price": 8,
+    "status": "active",
+    "discount": "10%",
+    "stock": 200,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Ghazala Ahmed",
+        "comment": "Great for sensitive skin.",
+        "rating": 4.8
+      }
+    ],
+    "rating": [4.8],
+    "likes": ["user39", "user40"],
+    "totalSold": 300,
+    "priceHistory": [
+      { "date": "2022-07-01", "oldPrice": 10 },
+      { "date": "2022-07-15", "oldPrice": 9 }
+    ]
+  },
+  {
+    "id": 26,
+    "key": 26,
+    "title": "Exfoliator",
+    "description": "Removes dead skin cells",
+    "brand": "st. ives",
+    "category": "beauty",
+    "price": 6,
+    "status": "active",
+    "discount": "10%",
+    "stock": 150,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Hassan Raza",
+        "comment": "Great for smooth skin.",
+        "rating": 4.7
+      }
+    ],
+    "rating": [4.7],
+    "likes": ["user41"],
+    "totalSold": 200,
+    "priceHistory": [
+      { "date": "2022-06-01", "oldPrice": 8 },
+      { "date": "2022-06-15", "oldPrice": 7 }
+    ]
+  },
+  {
+    "id": 27,
+    "key": 27,
+    "title": "Moisturizer",
+    "description": "Hydrating and lightweight",
+    "brand": "cerave",
+    "category": "beauty",
+    "price": 12,
+    "status": "active",
+    "discount": "10%",
+    "stock": 120,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Iqra Khan",
+        "comment": "Great for dry skin.",
+        "rating": 4.6
+      }
+    ],
+    "rating": [4.6],
+    "likes": ["user42", "user43"],
+    "totalSold": 150,
+    "priceHistory": [
+      { "date": "2022-05-01", "oldPrice": 15 },
+      { "date": "2022-05-15", "oldPrice": 14 }
+    ]
+  },
+  {
+    "id": 28,
+    "key": 28,
+    "title": "Face Oil",
+    "description": "Nourishing and hydrating",
+    "brand": "rosehip",
+    "category": "beauty",
+    "price": 18,
+    "status": "active",
+    "discount": "10%",
+    "stock": 80,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Javed Iqbal",
+        "comment": "Great for glowing skin.",
+        "rating": 4.8
+      }
+    ],
+    "rating": [4.8],
+    "likes": ["user44"],
+    "totalSold": 100,
+    "priceHistory": [
+      { "date": "2022-04-01", "oldPrice": 20 },
+      { "date": "2022-04-15", "oldPrice": 19 }
+    ]
+  },
+  {
+    "id": 29,
+    "key": 29,
+    "title": "Face Mist",
+    "description": "Refreshing and hydrating",
+    "brand": "mario badescu",
+    "category": "beauty",
+    "price": 10,
+    "status": "active",
+    "discount": "10%",
+    "stock": 100,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Khadija Rehman",
+        "comment": "Great for summer.",
+        "rating": 4.7
+      }
+    ],
+    "rating": [4.7],
+    "likes": ["user45", "user46"],
+    "totalSold": 120,
+    "priceHistory": [
+      { "date": "2022-03-01", "oldPrice": 12 },
+      { "date": "2022-03-15", "oldPrice": 11 }
+    ]
+  },
+  {
+    "id": 30,
+    "key": 30,
+    "title": "Lip Scrub",
+    "description": "Exfoliates and softens lips",
+    "brand": "fresh",
+    "category": "beauty",
+    "price": 8,
+    "status": "active",
+    "discount": "10%",
+    "stock": 150,
+    "images": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Laiba Aslam",
+        "comment": "Great for dry lips.",
+        "rating": 4.6
+      }
+    ],
+    "rating": [4.6],
+    "likes": ["user47"],
+    "totalSold": 200,
+    "priceHistory": [
+      { "date": "2022-02-01", "oldPrice": 10 },
+      { "date": "2022-02-15", "oldPrice": 9 }
+    ]
+  }
+]
