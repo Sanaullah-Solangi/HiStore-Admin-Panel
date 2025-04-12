@@ -4,10 +4,20 @@ import { useState, useEffect, useRef, useContext } from "react";
 import { Button, Checkbox, Radio, Space } from "antd";
 import { FilterOutlined } from "@ant-design/icons";
 import { ThemeContext } from "../../context/ThemeContext";
+import MyButton from "../ui/MyButton";
 
 const FilterDropdown = ({ filters = [], onApply, defaultValues = {} }) => {
-  const { mainColor, bgColor, bgHoverColor, textColor } =
-    useContext(ThemeContext);
+  const {
+    theme,
+    mainColor,
+    bgColor,
+    bgHoverColor,
+    bgHelperColor,
+    textColor,
+    secondaryTextColor,
+    borderColor,
+    shadowColor,
+  } = useContext(ThemeContext);
   const [isOpen, setIsOpen] = useState(false);
   const [filterValues, setFilterValues] = useState({});
   const dropdownRef = useRef(null);
@@ -79,9 +89,12 @@ const FilterDropdown = ({ filters = [], onApply, defaultValues = {} }) => {
 
   return (
     <div className="filter-dropdown relative inline-block" ref={dropdownRef}>
-      <Button icon={<FilterOutlined />} onClick={() => setIsOpen(!isOpen)}>
-        Filter
-      </Button>
+      <MyButton
+        text={"Filter"}
+        icon={<FilterOutlined />}
+        onClick={() => setIsOpen(!isOpen)}
+      />
+
       {isOpen && (
         <div className="filter-dropdown-content absolute top-[100%] left-0 z-[10000] min-w-[100%] p-4  border border-[#d9d9d9] rounded ">
           <div className="flex gap-6">
@@ -89,7 +102,7 @@ const FilterDropdown = ({ filters = [], onApply, defaultValues = {} }) => {
               <div key={filterIndex} className="filter-section  mb-4">
                 {filter.type === "date" ? (
                   <>
-                    <h1 className="font-bold text-[0.9rem] mb-2 whitespace-nowrap">
+                    <h1 className="filter-heading font-bold text-[0.9rem] mb-2 whitespace-nowrap">
                       {filter.heading}
                     </h1>
                     <input
@@ -114,7 +127,7 @@ const FilterDropdown = ({ filters = [], onApply, defaultValues = {} }) => {
                       }));
                     }}
                   >
-                    <h1 className="font-bold text-[0.9rem] mb-2 whitespace-nowrap">
+                    <h1 className="filter-heading font-bold text-[0.9rem] mb-2 whitespace-nowrap">
                       {filter.heading}
                     </h1>
                     {filter.values?.map((value) => (
@@ -137,21 +150,25 @@ const FilterDropdown = ({ filters = [], onApply, defaultValues = {} }) => {
           </div>
 
           <div className="filter-actions flex justify-end gap-2 py-4 border-t border-[#f0f0f0]">
-            <Button onClick={handleReset}>Reset</Button>
-            <Button
-              style={{ background: `${mainColor}` }}
-              type="primary"
+            <MyButton text={"Reset"} onClick={handleReset} />
+            <MyButton
+              text={"Apply"}
+              type={"primary"}
+              className="apply-btn"
               onClick={handleApply}
-            >
-              Apply
-            </Button>
+            />
           </div>
         </div>
       )}
       <style jsx>{`
         .filter-dropdown-content {
-          background-color: ${bgColor};
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          background-color: ${theme == "light" ? bgColor : bgHelperColor};
+          border: none !important;
+          box-shadow: ${shadowColor};
+        }
+
+        .filter-heading {
+          color: ${theme == "light" ? textColor : secondaryTextColor};
         }
 
         .radioBtns {
@@ -160,6 +177,35 @@ const FilterDropdown = ({ filters = [], onApply, defaultValues = {} }) => {
         .datePicker {
           background: ${bgHoverColor};
           color: ${textColor};
+        }
+        .ant-radio-wrapper-checked:hover .ant-radio-inner {
+          border-color: ${mainColor} !important;
+        }
+        .ant-radio-input + .ant-radio-inner,
+        .ant-radio-wrapper .ant-radio-inner {
+          border: 2px solid ${textColor} !important;
+          box-shadow: none !important;
+          background: ${bgColor} !important;
+        }
+
+        .ant-radio-wrapper-checked .ant-radio-inner {
+          border: none !important;
+          background: ${mainColor} !important;
+        }
+        .ant-radio-wrapper-checked .ant-radio-inner:after {
+          background: ${bgColor} !important;
+          width: 22px !important;
+          height: 22px !important;
+          margin-block-start: -10.9px !important;
+          margin-inline-start: -10.9px !important;
+        }
+
+        .filter-btn {
+          border: 1px solid ${borderColor} !important;
+        }
+        .apply-btn {
+          background: ${mainColor} !important;
+          color: white !important;
         }
       `}</style>
     </div>

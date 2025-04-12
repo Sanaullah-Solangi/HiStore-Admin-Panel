@@ -8,24 +8,28 @@
     "category": "beauty",
     "price": 100,
     "status": "pending",
-    "discount": "10%",
+    "discount": 10,
     "stock": 50,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
-        "user": "Ayesha Siddiqui",
-        "comment": "Great product! Loved it.",
-        "rating": 4.5
+        "user": "John Doe",
+        "rating": 4.5,
+        "comment": "Great shirt, fits perfectly!",
+        "date": "2023-07-23",
+        "avatar": "https://via.placeholder.com/40"
       },
       {
         "id": 2,
-        "user": "Bilal Ahmed",
-        "comment": "Good quality but a bit expensive.",
-        "rating": 3.8
+        "user": "Ayesha Siddiqui",
+        "rating": 4.5,
+        "comment": "Great product! Loved it.",
+        "date": "2023-07-23",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
-    "rating": [4.5, 3.8],
+    "rating": [4.5, 4.5],
     "likes": ["user1", "user2", "user3"],
     "totalSold": 120,
     "priceHistory": [
@@ -42,15 +46,17 @@
     "category": "beauty",
     "price": 15,
     "status": "active",
-    "discount": "5%",
+    "discount": 5,
     "stock": 200,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Fatima Noor",
+        "rating": 4.7,
         "comment": "Amazing color!",
-        "rating": 4.7
+        "date": "2023-07-22",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.7],
@@ -70,15 +76,17 @@
     "category": "beauty",
     "price": 25,
     "status": "active",
-    "discount": "15%",
+    "discount": 15,
     "stock": 150,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Hamza Raza",
+        "rating": 4.2,
         "comment": "Perfect for daily use.",
-        "rating": 4.2
+        "date": "2023-07-21",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.2],
@@ -98,15 +106,17 @@
     "category": "beauty",
     "price": 12,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 180,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Imran Sheikh",
+        "rating": 4.8,
         "comment": "Great product!",
-        "rating": 4.8
+        "date": "2023-07-20",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.8],
@@ -126,15 +136,17 @@
     "category": "beauty",
     "price": 8,
     "status": "active",
-    "discount": "20%",
+    "discount": 20,
     "stock": 220,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Junaid Malik",
+        "rating": 4.6,
         "comment": "Easy to apply.",
-        "rating": 4.6
+        "date": "2023-07-19",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.6],
@@ -154,15 +166,17 @@
     "category": "beauty",
     "price": 18,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 120,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Khadija Rehman",
+        "rating": 4.9,
         "comment": "Love the color!",
-        "rating": 4.9
+        "date": "2023-07-18",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.9],
@@ -182,15 +196,17 @@
     "category": "beauty",
     "price": 22,
     "status": "active",
-    "discount": "5%",
+    "discount": 5,
     "stock": 90,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Laiba Aslam",
+        "rating": 4.7,
         "comment": "Perfect for parties.",
-        "rating": 4.7
+        "date": "2023-07-17",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.7],
@@ -210,15 +226,17 @@
     "category": "beauty",
     "price": 20,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 200,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Muhammad Saad",
+        "rating": 4.5,
         "comment": "Great for dark circles.",
-        "rating": 4.5
+        "date": "2023-07-16",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.5],
@@ -238,15 +256,17 @@
     "category": "beauty",
     "price": 30,
     "status": "active",
-    "discount": "15%",
+    "discount": 15,
     "stock": 80,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Nadia Akhtar",
+        "rating": 4.8,
         "comment": "Keeps makeup intact.",
-        "rating": 4.8
+        "date": "2023-07-15",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.8],
@@ -266,15 +286,17 @@
     "category": "beauty",
     "price": 10,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 250,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Omar Farooq",
+        "rating": 4.6,
         "comment": "Love the shine!",
-        "rating": 4.6
+        "date": "2023-07-14",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.6],
@@ -294,15 +316,17 @@
     "category": "beauty",
     "price": 50,
     "status": "active",
-    "discount": "20%",
+    "discount": 20,
     "stock": 60,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Pakeeza Khan",
+        "rating": 4.9,
         "comment": "Amazing colors!",
-        "rating": 4.9
+        "date": "2023-07-13",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.9],
@@ -322,15 +346,17 @@
     "category": "beauty",
     "price": 28,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 100,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Qasim Ali",
+        "rating": 4.7,
         "comment": "Perfect for contouring.",
-        "rating": 4.7
+        "date": "2023-07-12",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.7],
@@ -350,15 +376,17 @@
     "category": "beauty",
     "price": 22,
     "status": "active",
-    "discount": "5%",
+    "discount": 5,
     "stock": 120,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Rukhsar Ahmed",
+        "rating": 4.5,
         "comment": "Great for oily skin.",
-        "rating": 4.5
+        "date": "2023-07-11",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.5],
@@ -378,15 +406,17 @@
     "category": "beauty",
     "price": 10,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 180,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Sadia Batool",
+        "rating": 4.6,
         "comment": "Perfect for lipstick.",
-        "rating": 4.6
+        "date": "2023-07-10",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.6],
@@ -406,15 +436,17 @@
     "category": "beauty",
     "price": 35,
     "status": "active",
-    "discount": "15%",
+    "discount": 15,
     "stock": 70,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Tariq Mahmood",
+        "rating": 4.8,
         "comment": "Great for oily skin.",
-        "rating": 4.8
+        "date": "2023-07-09",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.8],
@@ -434,15 +466,17 @@
     "category": "beauty",
     "price": 5,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 300,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Uzma Khan",
+        "rating": 4.7,
         "comment": "Perfect for dry lips.",
-        "rating": 4.7
+        "date": "2023-07-08",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.7],
@@ -462,15 +496,17 @@
     "category": "beauty",
     "price": 12,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 150,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Waqar Ahmed",
+        "rating": 4.5,
         "comment": "Great for daily use.",
-        "rating": 4.5
+        "date": "2023-07-07",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.5],
@@ -490,15 +526,17 @@
     "category": "beauty",
     "price": 25,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 100,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Yasir Hussain",
+        "rating": 4.8,
         "comment": "Perfect for sensitive skin.",
-        "rating": 4.8
+        "date": "2023-07-06",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.8],
@@ -518,15 +556,17 @@
     "category": "beauty",
     "price": 40,
     "status": "active",
-    "discount": "20%",
+    "discount": 20,
     "stock": 60,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Zainab Ali",
+        "rating": 4.9,
         "comment": "Great for glowing skin.",
-        "rating": 4.9
+        "date": "2023-07-05",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.9],
@@ -546,15 +586,17 @@
     "category": "beauty",
     "price": 15,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 200,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Ahmed Raza",
+        "rating": 4.7,
         "comment": "Great for outdoor use.",
-        "rating": 4.7
+        "date": "2023-07-04",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.7],
@@ -574,15 +616,17 @@
     "category": "beauty",
     "price": 20,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 120,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Bushra Khan",
+        "rating": 4.6,
         "comment": "Great for dry skin.",
-        "rating": 4.6
+        "date": "2023-07-03",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.6],
@@ -602,15 +646,17 @@
     "category": "beauty",
     "price": 30,
     "status": "active",
-    "discount": "15%",
+    "discount": 15,
     "stock": 80,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Danish Iqbal",
+        "rating": 4.8,
         "comment": "Great for sensitive skin.",
-        "rating": 4.8
+        "date": "2023-07-02",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.8],
@@ -630,15 +676,17 @@
     "category": "beauty",
     "price": 10,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 150,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Eman Fatima",
+        "rating": 4.7,
         "comment": "Great for glowing skin.",
-        "rating": 4.7
+        "date": "2023-07-01",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.7],
@@ -658,15 +706,17 @@
     "category": "beauty",
     "price": 12,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 100,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Fahad Khan",
+        "rating": 4.6,
         "comment": "Great for oily skin.",
-        "rating": 4.6
+        "date": "2023-06-30",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.6],
@@ -686,15 +736,17 @@
     "category": "beauty",
     "price": 8,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 200,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Ghazala Ahmed",
+        "rating": 4.8,
         "comment": "Great for sensitive skin.",
-        "rating": 4.8
+        "date": "2023-06-29",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.8],
@@ -714,15 +766,17 @@
     "category": "beauty",
     "price": 6,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 150,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Hassan Raza",
+        "rating": 4.7,
         "comment": "Great for smooth skin.",
-        "rating": 4.7
+        "date": "2023-06-28",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.7],
@@ -742,15 +796,17 @@
     "category": "beauty",
     "price": 12,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 120,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Iqra Khan",
+        "rating": 4.6,
         "comment": "Great for dry skin.",
-        "rating": 4.6
+        "date": "2023-06-27",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.6],
@@ -770,15 +826,17 @@
     "category": "beauty",
     "price": 18,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 80,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Javed Iqbal",
+        "rating": 4.8,
         "comment": "Great for glowing skin.",
-        "rating": 4.8
+        "date": "2023-06-26",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.8],
@@ -798,15 +856,17 @@
     "category": "beauty",
     "price": 10,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 100,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Khadija Rehman",
+        "rating": 4.7,
         "comment": "Great for summer.",
-        "rating": 4.7
+        "date": "2023-06-25",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.7],
@@ -826,15 +886,17 @@
     "category": "beauty",
     "price": 8,
     "status": "active",
-    "discount": "10%",
+    "discount": 10,
     "stock": 150,
-    "images": [],
+    "images": { "main": "", "thumbnails": [] },
     "reviews": [
       {
         "id": 1,
         "user": "Laiba Aslam",
+        "rating": 4.6,
         "comment": "Great for dry lips.",
-        "rating": 4.6
+        "date": "2023-06-24",
+        "avatar": "https://via.placeholder.com/40"
       }
     ],
     "rating": [4.6],

@@ -15,7 +15,7 @@ function StickyHeader() {
     useContext(ThemeContext);
   return (
     <div
-      className="sticky top-0 z-10 flex items-center justify-between border-b p-4 transition-all duration-300 ease-in-out"
+      className="sticky top-0 z-10 flex items-center justify-between  p-4 transition-all duration-300 ease-in-out"
       style={{ backgroundColor: bgColor, borderColor: `${textColor}20` }}
     >
       <div className="flex items-center gap-4">
@@ -39,6 +39,11 @@ function StickyHeader() {
             "Dashboard Overview"
           ) : pathname == "/products" ? (
             "Product Management"
+          ) : pathname.includes("/product-details") ? (
+            <span>
+              <LeftOutlined onClick={() => window.history.back()} /> Product
+              Details
+            </span>
           ) : pathname == "/orders" ? (
             "Order Management"
           ) : pathname == "/users" ? (
@@ -81,7 +86,7 @@ function StickyHeader() {
           }}
           className="h-7 w-7 cursor-pointer"
           onClick={() => {
-            setTheme("black");
+            setTheme("dark");
           }}
         />
       ) : (

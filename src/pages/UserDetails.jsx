@@ -125,7 +125,7 @@ export default function UserDetails() {
         <div className="mt-6">
           <Title
             style={{
-              color: `${theme == "light" ? "black" : "#B0B0B0"}`,
+              color: `${theme == "light" ? "dark" : "#B0B0B0"}`,
             }}
             level={5}
           >
@@ -144,7 +144,7 @@ export default function UserDetails() {
         <div className="mt-6">
           <Title
             style={{
-              color: `${theme == "light" ? "black" : "#B0B0B0"}`,
+              color: `${theme == "light" ? "dark" : "#B0B0B0"}`,
             }}
             level={5}
           >

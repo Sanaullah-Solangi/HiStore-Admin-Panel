@@ -42,7 +42,8 @@ export default function Sidebar() {
   return (
     <>
       <aside
-        className={`fixed inset-y-0 left-0 z-[100]  flex w-[270px] flex-col border-r transition-all duration-300 ease-in-out ${
+        className={`fixed inset-y-0 left-0 z-[100]  flex w-[270px] flex-col
+        }  transition-all duration-300 ease-in-out ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } lg:static lg:translate-x-0`}
         style={{ backgroundColor: bgColor }}
@@ -81,7 +82,7 @@ export default function Sidebar() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-colors ${
+                className={`flex items-center gap-3 rounded-[3px] px-3 py-2 transition-colors ${
                   isActive ? "text-white" : ""
                 }`}
                 style={{

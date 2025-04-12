@@ -13,6 +13,7 @@ import NotFound from "../components/common/NotFound";
 import Users from "../pages/Users";
 import UserDetails from "../pages/UserDetails";
 import Products from "../pages/Products";
+import ProductDetails from "../pages/ProductDetails";
 function AppRouter() {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ function AppRouter() {
           <Route path="users" element={<Users />} />
           <Route path="user-details/:id" element={<UserDetails />} />
           <Route path="products" element={<Products />} />
+          <Route path="product-details" element={<ProductDetails />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

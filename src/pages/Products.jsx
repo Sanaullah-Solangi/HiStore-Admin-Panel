@@ -1,31 +1,56 @@
 // "use client";
 
 import { useContext, useEffect, useState } from "react";
-import { Button, Input } from "antd";
 import {
   SearchOutlined,
   SyncOutlined,
   FileExcelOutlined,
+  EditOutlined,
+  EyeOutlined,
+  CaretLeftOutlined,
+  CaretRightOutlined,
+  FormOutlined,
 } from "@ant-design/icons";
 import DataTable from "../components/DataTable";
 import { ThemeContext } from "../context/ThemeContext";
 import FilterDropdown from "../components/common/FilterDropdown";
 import { useNavigate } from "react-router-dom";
+import MyInput from "../components/ui/MyInput";
+import MyButton from "../components/ui/MyButton";
+import FilterModal from "../components/common/FilterModal";
 const Products = () => {
-  const { theme, bgColor, bgHoverColor, textColor } = useContext(ThemeContext);
+  const {
+    theme,
+    mainColor,
+    bgColor,
+    bgHoverColor,
+    bgHelperColor,
+    textColor,
+    secondaryTextColor,
+    borderColor,
+  } = useContext(ThemeContext);
+  const navigate = useNavigate();
+  const [visible, setVisible] = useState(false);
+  const [showEditBtn, setShowEditBtn] = useState(false);
+  const [selectedRowId, setSelectedRowId] = useState(null);
   const [searchText, setSearchText] = useState("");
   const [pageNum, setPageNum] = useState(1);
   const [products, setProducts] = useState([]);
   const [total, setTotal] = useState(10);
   const [filtersValue, setFiltersValue] = useState([]);
-  const [isFilterVisible, setIsFilterVisible] = useState(false);
-  const navigate = useNavigate();
-
+  console.log("SELECTED ROW ID =>", visible);
   useEffect(() => {
     fetchDataFromDB();
   }, [pageNum, filtersValue]);
 
-  console.log(products);
+  const editProduct = (description, finalPrice) => {
+    const details = {
+      description,
+      finalPrice,
+    };
+    console.log(details);
+  };
+
   // FUNCTION TO FETCH DATA
   const fetchDataFromDB = async () => {
     try {
@@ -90,13 +115,54 @@ const Products = () => {
       title: "ACTION",
       key: "action",
       render: (record) => (
-        <Button
-          type="link"
-          style={{ padding: 0 }}
-          onClick={() => navigate(`/user-details/${record.id}`)}
+        <div
+          className="btn-wrapper"
+          onClick={() => {
+            setShowEditBtn(!showEditBtn);
+            setSelectedRowId(selectedRowId === record.id ? null : record.id);
+          }}
         >
-          Edit
-        </Button>
+          Action
+          {selectedRowId == record.id ? (
+            <CaretRightOutlined className="arrow" />
+          ) : (
+            <CaretLeftOutlined className="arrow" />
+          )}
+          <div
+            style={{
+              position: "absolute",
+              top: "115%",
+              right: `${selectedRowId == record.id ? "-5%" : "-200%"}`,
+              opacity: `${selectedRowId == record.id ? "1" : "0"}`,
+              transition: "all ease-in-out 200ms",
+              zIndex: "1000",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "cente",
+              flexDirection: "column",
+              background: bgColor,
+              boxShadow: "0 0 10px rgba(0,0,0,0.4)",
+              minWidth: "150%",
+              borderRadius: "3px",
+              overflow: "hidden",
+            }}
+          >
+            {/* EDIT BTN */}
+            <MyButton
+              text={"Edit"}
+              icon={<FormOutlined className="menu-btn-icon" />}
+              className="menu-btn"
+              onClick={() => setVisible(true)}
+            />
+            {/* VIEW BTN */}
+            <MyButton
+              text={"View"}
+              icon={<EyeOutlined className="menu-btn-icon" />}
+              className="menu-btn"
+              onClick={() => navigate("/product-details")}
+            />
+          </div>
+        </div>
       ),
     },
   ];
@@ -124,12 +190,13 @@ const Products = () => {
         >
           <div className="flex justify-between items-center mb-4">
             <div className="flex gap-2">
-              <Input
-                placeholder="Search by title/category or status"
+              <MyInput
+                placeholder={"Search by title/category or status"}
                 prefix={<SearchOutlined />}
                 onChange={(e) => handleSearch(e.target.value)}
                 style={{ width: 250 }}
               />
+
               <FilterDropdown
                 filters={filters}
                 onApply={setFiltersValue}
@@ -141,8 +208,8 @@ const Products = () => {
               />
             </div>
             <div className="flex gap-2">
-              <Button icon={<SyncOutlined />}>Sync</Button>
-              <Button icon={<FileExcelOutlined />}>Export CSV</Button>
+              <MyButton text={"Sync"} icon={<SyncOutlined />} />
+              <MyButton text={"Export CSV"} icon={<FileExcelOutlined />} />
             </div>
           </div>
           <DataTable
@@ -156,10 +223,66 @@ const Products = () => {
           />
         </div>
       </div>
+      {visible && (
+        <FilterModal
+          visible={visible}
+          onClose={() => setVisible(false)}
+          onApply={editProduct}
+        />
+      )}
       <style jsx global>{`
         .mainContainer {
           background: ${theme == "light" ? bgHoverColor : "rgb(45,45,45)"};
-        `}</style>
+        }
+        .btn-wrapper {
+          transition: all linear 200ms !important;
+          background: ${theme == "dark" && bgHoverColor};
+          border: 1px solid ${borderColor};
+          color: ${theme == "dark" && secondaryTextColor};
+          border-radius: 3px;
+          padding-block: 0.5rem;
+          width: 90px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        .btn-wrapper:hover {
+          border-color: ${theme == "light"
+            ? secondaryTextColor
+            : textColor} !important;
+          color: ${textColor} !important;
+        }
+        .arrow {
+          color: rgb(137, 137, 137);
+        }
+        .btn-wrapper:hover > .arrow {
+          color: ${textColor};
+        }
+
+        .menu-btn {
+          background: transparent;
+          min-width: 100%;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          gap: 1.2rem;
+          padding-inline: 0.7rem;
+          font-weight: 500;
+          border: none !important;
+        }
+        .menu-btn:nth-child(1) {
+          border-bottom: 1px solid rgba(110, 110, 110, 0.1) !important;
+        }
+        .menu-btn:hover {
+          background: ${bgHoverColor} !important;
+        }
+
+        .menu-btn-icon {
+          font-size: 1.4rem !important;
+        }
+      `}</style>
     </div>
   );
 };
